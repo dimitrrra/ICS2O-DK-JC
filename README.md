@@ -1,2 +1,2 @@
-# ICS2ODK-JC
+# ICS2O-DK-JC
 Where we store our code for the game.
