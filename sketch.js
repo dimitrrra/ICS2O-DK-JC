@@ -34,6 +34,30 @@ Sams Cat
  Gray
  Purple
 
+6)What kind of art would you like you to put into the game
+
+Monkey
+Robot
+
+7)What is your favourite animal?
+
+Shark
+Lemon Shark
+
+8)Is there anything else you want to put into the game?
+
+A searching game looking for things
+
+9)Do you play any sports? What sports?
+
+gymnastics
+hockey
+dance
+
+10)Do you have any pets? If so what's their name?
+
+fish
+
 #2-Luke
 
 1)What are your hobbies?
@@ -80,8 +104,19 @@ Fish
 
 Wrestling 
 Seth Rollins
- 
- 
+
+9)Do you play any sports? What sports?
+
+ Soccer
+ Wrestling
+
+10)Do you have any pets? If so what's their name?
+
+2 dogs
+- bo
+- dusty
+
+
  
 
 
