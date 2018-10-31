@@ -1,3 +1,21 @@
 # ICS2O-DK-JC
-Where we store our code for the game.
-Justice, Truth, it is best to speak the truth
+function setup() {
+createCanvas(400, 400);
+}
+
+function draw() {
+background(255);
+fill(255, 0, 0);
+ellipse(200, 200, 200, 200);
+textSize(25);
+fill(255, 255, 255);
+text("   Is Yunus a \n Homosexual?", 120, 180);
+if (mouseIsPressed) {
+fill(0, 255, 0);
+ellipse(200, 200, 200, 200);
+fill(0, 0, 0);
+text("Yes B", 165, 200)
+textSize(15);
+text("       This post was \n made by Saad Gang", 130, 350);
+}
+}
