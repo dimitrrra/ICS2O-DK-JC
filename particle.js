@@ -28,6 +28,9 @@ function Person() {
     if (this.pos.y > height) {
       this.vel.y *= 0;
       this.pos.y = height;
+      if (this.pos.y = 0) {
+      this.vel.y *= 0;
+      this.pos.y = edge;
     }
   }
 }
