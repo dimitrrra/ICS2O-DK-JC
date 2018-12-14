@@ -1,10 +1,5 @@
-// Daniel Shiffman
-// https://www.kadenze.com/courses/the-nature-of-code
-// http://natureofcode.com/
-// Session 2: Array of Particles, multiple forces
-
 function Person() {
-  this.pos = createVector(50, height);
+  this.pos = createVector(25, height);
   this.vel = createVector(1, 0);
   this.acc = createVector(0, 0);
  
@@ -21,17 +16,21 @@ function Person() {
   this.display = function() {
     fill(255, 150);
     stroke(255);
-    rect(this.pos.x, this.pos.y-50, 20, 50);
+    ellipse(this.pos.x, this.pos.y-15, 30, 30);
   }
 
-  this.edges = function() {
+  this.edges = function(pipe) {
     if (this.pos.y > height) {
       this.vel.y *= 0;
       this.pos.y = height;
       if (this.pos.y = 0) {
       this.vel.y *= 0;
-      this.pos.y = edge;
+      this.pos.y = edges;
+ 
+    
+  }
     }
+    if((pipe.y-50<person.y || pipe.y+50>person.y)&&(pipe.x-50<person.x || pipe.x+50>person.x)){
+}
   }
 }
-
