@@ -59,44 +59,44 @@ function draw() {
   
   if (scene1 == true) {
     //title screen
-    background(11, 57, 84);
+    background(0, 0, 0);
     textSize(48);
-    fill(255, 90, 79);
-    text("Flappy Monkey Wrestler", 73, 100);
+    fill(235, 74, 68);
+    text("Flappy Wrestler", 150, 100);
     noStroke();
-    rect(50, 250, 200, 60);
-    rect(350, 250, 200, 60);
-    fill(11, 57, 84);
+    rect(90, 250, 200, 60);
+    fill(0,0,0);
     textSize(31);
-    text("play game", 73, 290);
-    text("options", 399, 290);
+    text("play game", 117, 290);
+    
     
   } else if (scene2 == true) { 
 //Characher selection
-    background(11, 57, 84);
+    background(0,0,0); //black
     textSize(48);
-    fill(255, 90, 79);
-    text("character select", 130, 75);
-    fill(255,193,86);
+    fill(235, 74, 68); //peach
+    text("character select", 143, 75);
+    fill(255,193,86); //yellow
     textSize(30);
-    text("harry potter", 30, 350);
-    text("tinkerbell", 230, 350);
-    text("screen slaver", 400, 350);
+    text("MONKEY", 131, 350);
+    text("ALIEN", 385, 350);
+    textSize(20);
     noStroke();
     fill(255, 90, 79);
-    rect(39, 96, 142, 217);
-    rect(221, 96, 142, 217);
-    rect(417, 96, 142, 217);
-    fill(11, 57, 84);
-    rect(41, 98, 138, 213);
-    rect(223, 98, 138, 213);
-    rect(419, 98, 138, 213);
-    fill(255);
+    //red
+    rect(124, 96, 142, 217);
+    rect(360, 96, 142, 217);
+   
+    fill(0,0,0); //black
+    rect(126, 98, 138, 213);
+    rect(362, 98, 138, 213);
+  
+    fill(255); //white rectangle
     rectMode(CENTER);
-    rect(110, 207, 20, 50);
-    rect(292, 207, 20, 50);
-    rect(488, 207, 20, 50);
-rectMode(CORNER);
+    rect(194, 207, 20, 50);
+    rect(433, 207, 20, 50);
+   
+		rectMode(CORNER);
     
   } else if(scene3 == true) {
     //options screen
@@ -138,7 +138,7 @@ rectMode(CORNER);
     fill(255, 193, 86);
     textSize(40);
     text("Jaden Coltart", 300, 150);
-    text("Decrabeis", 300, 200);
+    text("Dimitra Kyriakoylias", 300, 200);
     text("", 300, 250);
     text("Emma", 300, 300);
     text("Luke", 300, 350);
