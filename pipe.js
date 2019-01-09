@@ -22,7 +22,7 @@ function Pipe() {
   }
 
   this.display = function() {
-    fill(0, 24,89);
+    fill(0, 38, 255);
     stroke(255);
     
     rect(this.x, this.y, this.width, this.length);
@@ -42,4 +42,3 @@ function Pipe() {
     }
   }
 }
-
