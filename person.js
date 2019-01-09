@@ -14,7 +14,7 @@ function Person() {
   }
 
   this.display = function() {
-    fill(255, 150);
+    fill(10, 255, 67);
     stroke(255);
     ellipse(this.pos.x, this.pos.y-15, 30, 30);
   }
