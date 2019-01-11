@@ -59,9 +59,9 @@ function draw() {
   
   if (scene1 == true) {
     //title screen
-    background(0, 0, 0);
-    textSize(48);
-    fill(235, 74, 68);
+    background(255,255,255);
+    textSize(50);
+    fill(0, 38, 255);
     text("Flappy Wrestler", 150, 100);
     noStroke();
     rect(90, 250, 200, 60);
@@ -72,9 +72,9 @@ function draw() {
     
   } else if (scene2 == true) { 
 //Characher selection
-    background(0,0,0); //black
+    background(255,255,255); //black
     textSize(48);
-    fill(235, 74, 68); //peach
+    fill(0, 38, 255); //peach
     text("character select", 143, 75);
     fill(255,193,86); //yellow
     textSize(30);
@@ -82,7 +82,7 @@ function draw() {
     text("ALIEN", 385, 350);
     textSize(20);
     noStroke();
-    fill(255, 90, 79);
+    fill(0, 38, 255);
     //red
     rect(124, 96, 142, 217);
     rect(360, 96, 142, 217);
@@ -130,8 +130,8 @@ function draw() {
 	  
   } else if(scene5 == true) {
     //credits screen
-    background(11, 57, 84);
-    fill(255, 90, 79);
+    background(255,255,255);
+    fill(0, 38, 255);
     textSize(48);
     textAlign(CENTER);
     text("Credits", 300, 52);
