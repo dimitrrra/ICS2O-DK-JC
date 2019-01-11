@@ -68,7 +68,10 @@ function draw() {
     fill(0,0,0);
     textSize(31);
     text("play game", 117, 290);
-    
+    rect(0,0,50,400);
+    rect(590,0,50,400);
+    rect(0,0,650,40);
+    rect(0,325,650,40);
     
   } else if (scene2 == true) { 
 //Characher selection
