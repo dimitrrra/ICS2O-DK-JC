@@ -1,5 +1,6 @@
 var person;
 var redPipe; 
+var redPipe2;
 //checks what scene it currently is
 var scene1 = true;
 var scene2 = false;
@@ -12,7 +13,9 @@ var scene5 = false;
 function setup() {
   createCanvas(640, 360);
   person = new Person();
-  redPipe = new Pipe();
+  redPipe = new Pipe(700);
+  redPipe2 = new Pipe(100);
+  
 }
 
 var x = -100;
@@ -29,18 +32,26 @@ function keyPressed() {
 
 
 function draw() {
-  background(51);
+  background(51);  
+  //translate(-person.pos.x+50, 0);
 
-  translate(-person.pos.x+50, 0);
+//pushMatrix();
   
   var gravity = createVector(0,0.1);
   person.applyForce(gravity);
   
   person.update();
   person.edges(redPipe);
+  
+  person.checkPipe(redPipe);
+  fill(50,45,140);
+  rect(100,100,10,10);
   person.display();
   redPipe.update();
   redPipe.display();
+ // popMatrix();
+    redPipe2.update();
+    redPipe2.display();
   fill(255, 900, 100);
   
   
@@ -99,7 +110,7 @@ function draw() {
     rect(194, 207, 20, 50);
     rect(433, 207, 20, 50);
    
-		rectMode(CORNER);
+    rectMode(CORNER);
     
   } else if(scene3 == true) {
     //options screen
@@ -113,12 +124,12 @@ function draw() {
     fill(11, 57, 84);
     textSize(30);
     text("back", 38, 57);
-	  
+    
   } else if(scene4 == true) {
 
   background(51);
 
-  translate(-person.pos.x+50, 0);
+  //translate(-pers    on.pos.x+50, 0);
   
   var gravity = createVector(0,0.1);
   person.applyForce(gravity);
@@ -126,11 +137,18 @@ function draw() {
   person.update();
   person.edges(redPipe);
   person.display();
+  fill(50,45,140);
+  //rect(100,100,10,10);
   redPipe.update();
   redPipe.display();
+  redPipe2.update();
+    redPipe2.display();
+      person.checkPipe(redPipe);
+      person.checkPipe(redPipe2);
+
   fill(255, 900, 100);
 
-	  
+    
   } else if(scene5 == true) {
     //credits screen
     background(255,255,255);
@@ -154,27 +172,27 @@ function draw() {
 //changes scenes based on mouse clicks and where the mouse clicks
 function mousePressed() {
  if (scene1 == true && mouseX > 50 && mouseX < 250 && mouseY > 250 && mouseY < 310 && mousePressed) {
-    	scene2 = true;
-   		scene1 = false;
+      scene2 = true;
+       scene1 = false;
   } else if (scene1 == true && mouseX > 350 && mouseX < 550 && mouseY > 250 && mouseY < 310 && mousePressed) {
-    	scene3 = true;
-    	scene1 = false;
+      scene3 = true;
+      scene1 = false;
   } else if (scene2 == true && mouseX > 39 && mouseX < 181 && mouseY > 96 && mouseY < 313 && mousePressed) {
-    	scene4 = true;
-    	scene2 = false;
+      scene4 = true;
+      scene2 = false;
   } else if (scene2 == true && mouseX > 221 && mouseX < 363 && mouseY > 96 && mouseY < 313 && mousePressed) {
-    	scene4 = true;
-    	scene2 = false;
+      scene4 = true;
+      scene2 = false;
   } else if (scene2 == true && mouseX > 417 && mouseX < 559 && mouseY > 96 && mouseY < 313 && mousePressed) {
-    	scene4 = true;
-    	scene2 = false;
+      scene4 = true;
+      scene2 = false;
   } else if (scene3 == true && mouseX > 19 && mouseX < 127 && mouseY > 25 && mouseY < 74 && mousePressed) {
-    	scene1 = true;
-    	scene3 = false;
+      scene1 = true;
+      scene3 = false;
   } else if (scene4 == true && mousePressed) {
-    	scene5 = true;
-    	scene4 = false;
+      scene5 = true;
+      scene4 = false;
   } else if (scene5 == true && mousePressed) {
-    	scene1 = true;
-    	scene5 = false;
+      scene1 = true;
+      scene5 = false;
   }}
